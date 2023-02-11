@@ -10,7 +10,7 @@ logger.setLevel(logging.DEBUG)
 print('Loading Lambda function')
 
 runtime=boto3.Session().client('sagemaker-runtime')
-endpoint_Name='BradTestEndpoint'
+endpoint_name='dog-pytorch-endpoint-multi-instance'
 
 def lambda_handler(event, context):
 
@@ -22,7 +22,7 @@ def lambda_handler(event, context):
     bs=event
     runtime=boto3.Session().client('sagemaker-runtime')
     
-    response=runtime.invoke_endpoint(EndpointName=endpoint_Name,
+    response=runtime.invoke_endpoint(EndpointName=endpoint_name,
                                     ContentType="application/json",
                                     Accept='application/json',
                                     #Body=bytearray(x)
