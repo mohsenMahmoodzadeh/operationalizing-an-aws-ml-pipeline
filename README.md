@@ -4,6 +4,8 @@ In this project, we'll start with a completed ML project. Our goal in this proje
 tools and features of AWS to adjust, improve, configure, and prepare the model we started with for production-grade 
 deployment.
 
+**Note**: This repository relates to AWS Machine Learning Engineer nanodegree provided by Udacity.
+
 Taking raw ML code and preparing it for production deployment is a common task for ML engineers, and it's very 
 important for the following reasons:
 
